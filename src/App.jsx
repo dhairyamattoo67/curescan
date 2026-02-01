@@ -1,3 +1,4 @@
+import ClinicMap from "./ClinicMap";
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -225,7 +226,8 @@ function MapPlaceholder({ clinics = [] }) {
         <div className="h-64 w-full bg-gradient-to-br from-slate-50 to-slate-100" />
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
           <div className="max-w-md rounded-3xl border border-slate-200 bg-white/90 p-4 text-center shadow-sm">
-            <p className="text-sm font-semibold text-slate-900">Map integration goes here</p>
+            <p className="text-sm font-semibold text-slate-900"><ClinicMap />
+</p>
             <p className="mt-1 text-xs text-slate-600">Connect Google Maps / Mapbox and list nearby free clinics.</p>
           </div>
         </div>
